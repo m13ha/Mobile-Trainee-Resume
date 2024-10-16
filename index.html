@@ -5,360 +5,477 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Nwaokocha - Resume</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+  <body class="bg-gray-100">
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+      <div class="container mx-auto relative">
+        <div class="flex justify-between items-center">
+          <h1 class="text-xl font-bold">Michael Nwaokocha</h1>
+          <button class="md:hidden" id="menu-toggle">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden md:flex md:justify-end space-x-4 mt-4 md:mt-0"
+          id="nav-links"
+        >
+          <li>
+            <a href="#summary" class="nav-link" data-section="summary"
+              >Summary</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-section="experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="nav-link" data-section="education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-
-    <main id="content">
-      <section id="summary" class="active">
-        <div class="section-content">
-          <div class="image-subsection">
-            <img
-              src="./src/image-1.jpg"
-              alt="Michael Nwaokocha"
-              class="profile-img"
-            />
+    <main id="content" class="container mx-auto p-4">
+      <section id="summary" class="mb-8 section active">
+        <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+          <div class="md:flex">
+            <div class="md:w-1/3 mb-4 md:mb-0">
+              <img
+                src="./src/image-1.jpg"
+                alt="Michael Nwaokocha"
+                class="rounded-full w-48 h-48 mx-auto"
+              />
+            </div>
+            <div class="md:w-2/3 md:pl-6">
+              <h1 class="text-3xl font-bold mb-2">Michael Nwaokocha</h1>
+              <p class="text-gray-600 mb-2 font-italic text-blue-300">
+                📍 Lagos State, Nigeria | 📞 +2347062426267 | 📧
+                Nwaokocham@gmail.com
+              </p>
+              <p class="mb-4">
+                <a
+                  href="https://www.linkedin.com/in/m13ha/"
+                  target="_blank"
+                  class="text-blue-600 hover:underline"
+                  >Linkedin</a
+                >
+                |
+                <a
+                  href="https://github.com/m13ha"
+                  target="_blank"
+                  class="text-blue-600 hover:underline"
+                  >Github</a
+                >
+                |
+                <a
+                  href="https://m13ha.hashnode.dev/"
+                  target="_blank"
+                  class="text-blue-600 hover:underline"
+                  >Blog</a
+                >
+              </p>
+              <h2 class="text-2xl font-semibold mb-2">Professional Summary</h2>
+              <p class="text-gray-700">
+                Highly motivated and results-oriented professional with a unique
+                blend of software development expertise and entrepreneurial
+                spirit. Skilled in crafting user-friendly web experiences using
+                JavaScript, TypeScript, HTML5, CSS3, ReactJS, and Node.js.
+                Leverage a strong background in strategic planning, market
+                analysis, and project management to drive business growth.
+                Thrive on tackling challenges and excel at clear communication,
+                consistently delivering high-quality, scalable solutions that
+                meet deadlines. Proven ability to lead cross-functional teams
+                and manage projects from conception to completion.
+              </p>
+            </div>
           </div>
-          <div class="text-subsection">
-            <h1>Michael Nwaokocha</h1>
-            <p class="contact-info">
-              📍 Lagos State, Nigeria | 📞 +2347062426267 | 📧
-              Nwaokocham@gmail.com
+        </div>
+      </section>
+
+      <section id="experience" class="mb-8 section hidden">
+        <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+          <h2 class="text-2xl font-semibold mb-4">Work Experience</h2>
+          <div class="job mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              Volv Labs / Software Developer
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              January 2024 - PRESENT, Lagos State
             </p>
-            <p class="social-links">
-              <a href="https://www.linkedin.com/in/m13ha/" target="_blank"
-                >Linkedin,</a
-              >
-              <a href="https://github.com/m13ha" target="_blank">Github,</a>
-              <a href="https://m13ha.hashnode.dev/" target="_blank">Blog</a>
+            <ul class="list-disc pl-5">
+              <li>
+                Collaborated with UI/UX designers to develop client-side
+                interfaces.
+              </li>
+              <li>Worked with other developers to build REST APIs.</li>
+              <li>Wrote and conducted API testing.</li>
+            </ul>
+          </div>
+          <div class="job mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              Repono / Co-Founder
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              January 2019 - 2022, Benin City
             </p>
-            <h2>Professional Summary</h2>
+            <ul class="list-disc pl-5">
+              <li>
+                Co-founded and successfully managed a small-scale project
+                providing storage and protection during holiday periods for
+                students.
+              </li>
+              <li>
+                Oversaw all aspects of the project, including team building,
+                coordination, supervision, training new members, and task
+                delegation.
+              </li>
+            </ul>
+          </div>
+          <div class="job mb-6 section hidden">
+            <h3 class="text-xl font-semibold text-blue-600">
+              OjaWater / Sales Representative (Internship)
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              March 2023 - October 2023, Benin City
+            </p>
+            <ul class="list-disc pl-5">
+              <li>
+                Sold table water to retailers, achieving sales targets and
+                expanding customer base.
+              </li>
+              <li>
+                Managed inventory levels, ensuring sufficient stock for customer
+                demand.
+              </li>
+              <li>
+                Built and maintained relationships with retailers, addressing
+                their needs and concerns.
+              </li>
+              <li>
+                Conducted market research to identify potential new customers
+                and sales opportunities.
+              </li>
+              <li>
+                Offloaded and onloaded sachet water deliveries, ensuring timely
+                and accurate distribution.
+              </li>
+              <li>
+                Maintained detailed sales records, tracking sales performance
+                and identifying areas for improvement.
+              </li>
+            </ul>
+          </div>
+          <div class="job mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              Stop 2 Shop Supermarket / Stocker (Internship)
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              March 2020 - August 2020, Benin City
+            </p>
+            <ul class="list-disc pl-5">
+              <li>
+                Worked as part of the warehouse management team, responsible for
+                inventory organization, receiving, and stock replenishment.
+              </li>
+              <li>
+                Assisted in maintaining accurate records of stock levels and
+                conducted regular stock audits.
+              </li>
+              <li>
+                Collaborated with team members to ensure smooth warehouse
+                operations and efficient product distribution.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mb-8 section hidden">
+        <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+          <h2 class="text-2xl font-semibold mb-4">Education</h2>
+          <div class="education-item mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              University of Benin / Entrepreneurship BSc (Second-Class Upper)
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              Dec 2018 - Sept 2022, Benin City, Nigeria
+            </p>
             <p>
-              Highly motivated and results-oriented professional with a unique
-              blend of software development expertise and entrepreneurial
-              spirit. Skilled in crafting user-friendly web experiences using
-              JavaScript, TypeScript, HTML5, CSS3, ReactJS, and Node.js.
-              Leverage a strong background in strategic planning, market
-              analysis, and project management to drive business growth. Thrive
-              on tackling challenges and excel at clear communication,
-              consistently delivering high-quality, scalable solutions that meet
-              deadlines. Proven ability to lead cross-functional teams and
-              manage projects from conception to completion.
+              Bachelor's degree in Entrepreneurship, fostering business
+              management and innovation capabilities.
             </p>
           </div>
+          <div class="education-item mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              Udacity / Nanodegree
+            </h3>
+            <p class="text-gray-600 mb-2 font-italic text-blue-300">
+              August 2018 - October 2018
+            </p>
+            <p>
+              Completed a Nanodegree program, enhancing skills in front-end
+              development
+            </p>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">
+            Certifications
+          </h3>
+          <ul class="list-disc pl-5">
+            <li>A Visual Introduction to Algorithms, Educative, Aug 2022.</li>
+            <li>
+              Data Structures in JavaScript: Visualizations & Exercises,
+              Educative, Aug 2022.
+            </li>
+            <li>Learn Git the Hard Way, Educative, Aug 2022.</li>
+            <li>
+              React Deep Dive: From Beginner to Advanced, Educative, Aug 2022.
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section id="experience">
-        <div class="section-content">
-          <div class="image-subsection">
-            <img
-              src="./src/image-2.jpeg"
-              alt="Michael Nwaokocha"
-              class="section-img"
-            />
-          </div>
-          <div class="text-subsection">
-            <h2>Work Experience</h2>
-            <div class="job">
-              <h3>Volv Labs / Software Developer</h3>
-              <p class="date">January 2024 - PRESENT, Lagos State</p>
-              <ul>
-                <li>
-                  Collaborated with UI/UX designers to develop client-side
-                  interfaces.
-                </li>
-                <li>Worked with other developers to build REST APIs.</li>
-                <li>Wrote and conducted API testing.</li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Repono / Co-Founder</h3>
-              <p class="date">January 2019 - 2022, Benin City</p>
-              <ul>
-                <li>
-                  Co-founded and successfully managed a small-scale project
-                  providing storage and protection during holiday periods for
-                  students.
-                </li>
-                <li>
-                  Oversaw all aspects of the project, including team building,
-                  coordination, supervision, training new members, and task
-                  delegation.
-                </li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>OjaWater / Sales Representative (Internship)</h3>
-              <p class="date">March 2023 - October 2023, Benin City</p>
-              <ul>
-                <li>
-                  Sold table water to retailers, achieving sales targets and
-                  expanding customer base.
-                </li>
-                <li>
-                  Managed inventory levels, ensuring sufficient stock for
-                  customer demand.
-                </li>
-                <li>
-                  Built and maintained relationships with retailers, addressing
-                  their needs and concerns.
-                </li>
-                <li>
-                  Conducted market research to identify potential new customers
-                  and sales opportunities.
-                </li>
-                <li>
-                  Offloaded and onloaded sachet water deliveries, ensuring
-                  timely and accurate distribution.
-                </li>
-                <li>
-                  Maintained detailed sales records, tracking sales performance
-                  and identifying areas for improvement.
-                </li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Stop 2 Shop Supermarket / Stocker (Internship)</h3>
-              <p class="date">March 2020 - August 2020, Benin City</p>
-              <ul>
-                <li>
-                  Worked as part of the warehouse management team, responsible
-                  for inventory organization, receiving, and stock
-                  replenishment.
-                </li>
-                <li>
-                  Assisted in maintaining accurate records of stock levels and
-                  conducted regular stock audits.
-                </li>
-                <li>
-                  Collaborated with team members to ensure smooth warehouse
-                  operations and efficient product distribution.
-                </li>
-              </ul>
-            </div>
-          </div>
+      <section id="skills" class="mb-8 section hidden">
+        <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+          <h2 class="text-2xl font-semibold mb-4">Skills and Tools</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <li class="bg-blue-100 p-2 rounded">
+              Software Development: JavaScript, TypeScript, HTML5, CSS3,
+              ReactJS, Node.js, Golang
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              UI Development: Responsive Web Design, DOM Manipulation, Web
+              Content Structuring
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              Asynchronous Task Handling: Promises, Async/Await, Fetch API
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              Version Control: Git, GitHub
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              Code Quality and Testing: Unit Testing, Debugging, Performance
+              Optimization
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              RESTful API Development: Axios, Fetch API
+            </li>
+            <li class="bg-blue-100 p-2 rounded">
+              Continuous Learning and Research, Article Writing
+            </li>
+            <li class="bg-blue-100 p-2 rounded">Google Suite</li>
+            <li class="bg-blue-100 p-2 rounded">Microsoft Office</li>
+            <li class="bg-blue-100 p-2 rounded">Content Creation</li>
+            <li class="bg-blue-100 p-2 rounded">Leadership</li>
+            <li class="bg-blue-100 p-2 rounded">Problem-solving</li>
+            <li class="bg-blue-100 p-2 rounded">Team Management</li>
+          </ul>
         </div>
       </section>
 
-      <section id="education">
-        <div class="section-content">
-          <div class="image-subsection">
-            <img
-              src="./src/image-3.jpeg"
-              alt="Michael Nwaokocha"
-              class="section-img"
-            />
-          </div>
-          <div class="text-subsection">
-            <h2>Education</h2>
-            <div class="education-item">
-              <h3>
-                University of Benin / Entrepreneurship BSc (Second-Class Upper)
-              </h3>
-              <p class="date">Dec 2018 - Sept 2022, Benin City, Nigeria</p>
-              <p>
-                Bachelor's degree in Entrepreneurship, fostering business
-                management and innovation capabilities.
-              </p>
-            </div>
-            <div class="education-item">
-              <h3>Udacity / Nanodegree</h3>
-              <p class="date">August 2018 - October 2018</p>
-              <p>
-                Completed a Nanodegree program, enhancing skills in front-end
-                development
-              </p>
-            </div>
-            <h3>Certifications</h3>
-            <ul>
-              <li>A Visual Introduction to Algorithms, Educative, Aug 2022.</li>
+      <section id="projects" class="mb-8 section hidden">
+        <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+          <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+          <div class="project mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              <a
+                href="https://dsa-sand-box.vercel.app"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >DSA-SandBox</a
+              >
+            </h3>
+            <p class="italic mb-2">React Frontend Developer</p>
+            <ul class="list-disc pl-5">
               <li>
-                Data Structures in JavaScript: Visualizations & Exercises,
-                Educative, Aug 2022.
+                Visualized fundamental data structures (stacks, queues, trees,
+                graphs)
               </li>
-              <li>Learn Git the Hard Way, Educative, Aug 2022.</li>
               <li>
-                React Deep Dive: From Beginner to Advanced, Educative, Aug 2022.
+                Leveraged the power of React, Konva.js, TypeScript, Sass, and
+                Vite
+              </li>
+              <li>
+                Provided an interactive and visually appealing experience for
+                understanding data structures
+              </li>
+              <li>Technologies: React, Konva.js, TypeScript, Sass, Vite</li>
+            </ul>
+          </div>
+          <div class="project mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              <a
+                href="https://github.com/m13ha/twinkle-star"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >NASA SPACE APPS HACKATHON (2022)</a
+              >
+            </h3>
+            <p class="italic mb-2">React Frontend Developer</p>
+            <ul class="list-disc pl-5">
+              <li>Designed the game logic for the app</li>
+              <li>Researched and compiled the data used for the game</li>
+              <li>Built the interface of the app</li>
+              <li>
+                Collaborated with another frontend developer to develop the UI
+                used in the game
+              </li>
+              <li>Technologies: React JS, Material UI, Konva JS</li>
+            </ul>
+          </div>
+          <div class="project mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              <a
+                href="https://m13ha.github.io/tic-tac-toe/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >Tic-Tac-Toe</a
+              >
+            </h3>
+            <ul class="list-disc pl-5">
+              <li>Created a tic-tac-toe game using JavaScript and jQuery</li>
+              <li>Implemented the MVC design pattern for code organization</li>
+              <li>
+                Developed a reactive artificial intelligence to respond to
+                player moves
+              </li>
+              <li>
+                Designed the user interface for an engaging and interactive
+                gaming experience
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="section-content">
-          <div class="image-subsection">
-            <img
-              src="./src/repono-1.jpeg"
-              alt="Michael Nwaokocha"
-              class="section-img"
-            />
-          </div>
-          <div class="text-subsection">
-            <h2>Skills and Tools</h2>
-            <ul>
+          <div class="project mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              <a
+                href="https://infini-memes.netlify.app/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >Infini-Memes</a
+              >
+            </h3>
+            <ul class="list-disc pl-5">
               <li>
-                Software Development: JavaScript, TypeScript, HTML5, CSS3,
-                ReactJS, Node.js, Flutter, Golang
+                Developed a Single Page Application using React and Reddit API
               </li>
               <li>
-                UI Development: Responsive Web Design, DOM Manipulation, Web
-                Content Structuring
+                Implemented fetching and displaying of comedic images from
+                Reddit
               </li>
               <li>
-                Asynchronous Task Handling: Promises, Async/Await, Fetch API
+                Designed and built a minimal and responsive user interface
               </li>
-              <li>Version Control: Git, GitHub</li>
-              <li>
-                Code Quality and Testing: Unit Testing, Debugging, Performance
-                Optimization
-              </li>
-              <li>RESTful API Development: Axios, Fetch API</li>
-              <li>Continuous Learning and Research, Article Writing</li>
-              <li>Google Suite</li>
-              <li>Microsoft Office</li>
-              <li>Content Creation</li>
-              <li>Leadership</li>
-              <li>Problem-solving</li>
-              <li>Team Management</li>
+              <li>Ensured seamless navigation and intuitive user experience</li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="section-content">
-          <div class="image-subsection">
-            <img
-              src="./src/image-5.jpeg"
-              alt="Michael Nwaokocha"
-              class="section-img"
-            />
-          </div>
-          <div class="text-subsection">
-            <h2>Projects</h2>
-            <div class="project">
-              <h3>
-                <a href="https://dsa-sand-box.vercel.app" target="_blank"
-                  >DSA-SandBox</a
-                >
-              </h3>
-              <p><em>React Frontend Developer</em></p>
-              <ul>
-                <li>
-                  Visualized fundamental data structures (stacks, queues, trees,
-                  graphs)
-                </li>
-                <li>
-                  Leveraged the power of React, Konva.js, TypeScript, Sass, and
-                  Vite
-                </li>
-                <li>
-                  Provided an interactive and visually appealing experience for
-                  understanding data structures
-                </li>
-                <li>Technologies: React, Konva.js, TypeScript, Sass, Vite</li>
-              </ul>
-            </div>
-            <div class="project">
-              <h3>
-                <a href="https://github.com/m13ha/twinkle-star" target="_blank"
-                  >NASA SPACE APPS HACKATHON (2022)</a
-                >
-              </h3>
-              <p><em>React Frontend Developer</em></p>
-              <ul>
-                <li>Designed the game logic for the app</li>
-                <li>Researched and compiled the data used for the game</li>
-                <li>Built the interface of the app</li>
-                <li>
-                  Collaborated with another frontend developer to develop the UI
-                  used in the game
-                </li>
-                <li>Technologies: React JS, Material UI, Konva JS</li>
-              </ul>
-            </div>
-            <div class="project">
-              <h3>
-                <a href="https://m13ha.github.io/tic-tac-toe/" target="_blank"
-                  >Tic-Tac-Toe</a
-                >
-              </h3>
-              <ul>
-                <li>Created a tic-tac-toe game using JavaScript and jQuery</li>
-                <li>
-                  Implemented the MVC design pattern for code organization
-                </li>
-                <li>
-                  Developed a reactive artificial intelligence to respond to
-                  player moves
-                </li>
-                <li>
-                  Designed the user interface for an engaging and interactive
-                  gaming experience
-                </li>
-              </ul>
-            </div>
-            <div class="project">
-              <h3>
-                <a href="https://infini-memes.netlify.app/" target="_blank"
-                  >Infini-Memes</a
-                >
-              </h3>
-              <ul>
-                <li>
-                  Developed a Single Page Application using React and Reddit API
-                </li>
-                <li>
-                  Implemented fetching and displaying of comedic images from
-                  Reddit
-                </li>
-                <li>
-                  Designed and built a minimal and responsive user interface
-                </li>
-                <li>
-                  Ensured seamless navigation and intuitive user experience
-                </li>
-              </ul>
-            </div>
-            <div class="project">
-              <h3>
-                <a href="https://m13ha.github.io/documentary-finder/" target="_blank"
-                  >Documentary-Finder</a
-                >
-              </h3>
-              <ul>
-                <li>
-                  Built a Single Page Application using JavaScript, jQuery, and
-                  YouTube API
-                </li>
-                <li>
-                  Integrated the YouTube API to fetch and display documentaries
-                </li>
-                <li>
-                  Designed a minimalistic and functional user interface for easy
-                  exploration
-                </li>
-                <li>
-                  Implemented search functionality for users to find specific
-                  documentaries
-                </li>
-              </ul>
-            </div>
+          <div class="project mb-6">
+            <h3 class="text-xl font-semibold text-blue-600">
+              <a
+                href="https://m13ha.github.io/documentary-finder/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >Documentary-Finder</a
+              >
+            </h3>
+            <ul class="list-disc pl-5">
+              <li>
+                Built a Single Page Application using JavaScript, jQuery, and
+                YouTube API
+              </li>
+              <li>
+                Integrated the YouTube API to fetch and display documentaries
+              </li>
+              <li>
+                Designed a minimalistic and functional user interface for easy
+                exploration
+              </li>
+              <li>
+                Implemented search functionality for users to find specific
+                documentaries
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
 
     <script src="./script/script.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const nav = document.getElementById("nav-links");
+          nav.classList.toggle("hidden");
+          nav.classList.toggle("block");
+        });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const nav = document.getElementById("nav-links");
+        const menuToggle = document.getElementById("menu-toggle");
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+          nav.classList.add("hidden");
+          nav.classList.remove("block");
+        }
+      });
+
+      // Section switching functionality
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll(".section");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetSection = this.getAttribute("data-section");
+
+          sections.forEach((section) => {
+            section.classList.add("hidden");
+            section.classList.remove("active");
+          });
+
+          document.getElementById(targetSection).classList.remove("hidden");
+          document.getElementById(targetSection).classList.add("active");
+
+          // Close mobile menu after clicking
+          if (window.innerWidth < 768) {
+            document.getElementById("nav-links").classList.add("hidden");
+            document.getElementById("nav-links").classList.remove("block");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
